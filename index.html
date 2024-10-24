@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      @font-face {
+        font-family: "KumbSans";
+        src: url("./fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ\,wght.ttf")
+          format(truetype);
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "LeagueSpartan";
+        src: url("./fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf")
+          format(truetype);
+        font-display: swap;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        inline-size: 1.5;
+        min-height: 100vh;
+        font-size: 15px;
+        font-family: LeagueSpartan;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      :root {
+        --Very-Dark-Magenta: hsl(300, 43%, 22%);
+        --Soft-Pink: hsl(333, 80%, 67%);
+
+        --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+        --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+        --White: hsl(0, 0%, 100%);
+      }
+      .board {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .board-top {
+          display: flex;
+          /* align-items: start; */
+          /* justify-content: center; */
+          gap: 170px;
+          margin-bottom: 70px;
+          width: 1014px;
+
+          .direction {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 380px;
+            gap: 30px;
+
+            .title {
+              font-weight: 700;
+              font-size: 48px;
+              color: hsl(300, 43%, 22%);
+              letter-spacing: -2px;
+            }
+
+            .content {
+              line-height: 20px;
+              color: hsl(303, 10%, 53%);
+              font-weight: 500;
+            }
+          }
+
+          .score {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 18px;
+            gap: 50px;
+            
+            .grade {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: hsl(300, 43%, 22%);
+              font-weight: 700;
+
+              .icon {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                margin-right: 30px;
+
+                img {
+                  display: flex;
+                }
+              }
+            }
+
+            .report {
+              margin-left: 45px;
+            }
+
+            .besttech {
+              margin-left: 90px;
+            }
+          }
+        }
+
+        .board-bottom {
+          display: flex;
+          align-items: start;
+          /* justify-content: center; */
+          gap: 30px;
+
+          .card {
+            background-color: hsl(300, 43%, 22%);
+            color: hsl(300, 24%, 96%);
+            border-radius: 8px;
+            padding: 40px 30px;
+            width: 318px;
+
+            .user {
+              display: flex;
+              align-items: center;
+              gap: 30px;
+
+              .user-headshot img {
+                display: flex;
+                border-radius: 50%;
+                width: 40px; height: 40px;
+              }
+
+              .user-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 5px;
+
+                .status {
+                  font-weight: 400;
+                  color: hsl(333, 80%, 67%);
+                }
+              }
+            }
+
+            .content {
+              font-weight: 400;
+              line-height: 22px;
+              margin-top: 20px;
+            }
+          }
+
+          .irene {
+            margin-top: 20px;
+          }
+
+          .anne {
+            margin-top: 40px;
+          }
+        }
+      }
+
+      .attribution {
+        position: absolute;
+        font-size: 11px;
+        text-align: center;
+        bottom: 0;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <article class="board">
+      <section class="board-top">
+        <section class="direction">
+          <p class="title">10,000+ of our users love our products.</p>
+          <p class="content">
+            We only provide great products combined with excellent customer
+            service. See what our satisfied customers are saying about our
+            services.
+          </p>
+        </section>
+
+        <section class="score">
+          <section class="review grade">
+            <figure class="icon">
+              <img src="./images/icon-star.svg" alt="icon" />
+              <img src="./images/icon-star.svg" alt="icon" />
+              <img src="./images/icon-star.svg" alt="icon" />
+              <img src="./images/icon-star.svg" alt="icon" />
+              <img src="./images/icon-star.svg" alt="icon" />
+            </figure>
+            <p class="text">Rated 5 Stars in Reviews</p>
+          </section>
+
+          <section class="report grade">
+            <figure class="icon">
+              <img src="./images/icon-star.svg" alt="icon" />
+              <img src="./images/icon-star.svg" alt="icon" />
+              <img src="./images/icon-star.svg" alt="icon" />
+              <img src="./images/icon-star.svg" alt="icon" />
+              <img src="./images/icon-star.svg" alt="icon" />
+            </figure>
+            <p class="text">Rated 5 Stars in Report Guru</p>
+          </section>
+
+          <section class="besttech grade">
+            <figure class="icon">
+              <img src="./images/icon-star.svg" alt="icon" />
+              <img src="./images/icon-star.svg" alt="icon" />
+              <img src="./images/icon-star.svg" alt="icon" />
+              <img src="./images/icon-star.svg" alt="icon" />
+              <img src="./images/icon-star.svg" alt="icon" />
+            </figure>
+            <p class="text">Rated 5 Stars in BestTech</p>
+          </section>
+        </section>
+      </section>
+
+      <section class="board-bottom">
+        <section class="card colton">
+          <section class="user">
+            <figure class="user-headshot">
+              <img src="./images/image-colton.jpg" alt="icon" />
+            </figure>
+
+            <section class="user-info">
+              <p class="user-name">Colton Smith</p>
+              <p class="status">Verified Buyer</p>
+            </section>
+          </section>
+
+          <p class="content">
+            " We needed the same printed design as the one we had ordered a week
+            prior. Not only did they find the original order, but we also
+            received it in time. Excellent!"
+          </p>
+        </section>
+
+        <section class="card irene">
+          <section class="user">
+            <figure class="user-headshot">
+              <img src="./images/image-irene.jpg" alt="icon" />
+            </figure>
+
+            <section class="user-info">
+              <p class="user-name">Irene Roberts</p>
+              <p class="status">Verified Buyer</p>
+            </section>
+          </section>
+
+          <p class="content">
+            " Customer service is always excellent and very quick turn around.
+            Completely delighted with the simplicity of the purchase and the
+            speed of delivery."
+          </p>
+        </section>
+
+        <section class="card anne">
+          <section class="user">
+            <figure class="user-headshot">
+              <img src="./images/image-anne.jpg" alt="icon" />
+            </figure>
+
+            <section class="user-info">
+              <p class="user-name">Anne Wallace</p>
+              <p class="status">Verified Buyer</p>
+            </section>
+          </section>
+
+          <p class="content">
+            " Put an order with this company and can only praise them for the
+            very high standard. Will definitely use them again and recommend
+            them to everyone!"
+          </p>
+        </section>
+      </section>
+    </article>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">WEI HU</a>.
+    </footer>
+  </body>
+</html>
